@@ -1,2 +1,2 @@
 # M32895-coursework-2111410
-Repository for my Big Data Applications main coursework.
+Big Data Applications: end-to-end ML pipeline for predictive maintenance 
