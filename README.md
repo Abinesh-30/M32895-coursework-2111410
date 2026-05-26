@@ -4,6 +4,65 @@ Big Data Applications: end-to-end ML pipeline for predictive maintenance
 # project aim
 The aim of this project is to develop a machine learning pipeline that includes data loading, preprocessing, exploratory data analysis, model building, optimisation, and prediction on unseen data.
 
+# project objective
+The Objective of this project is to investigate whether machine learning can be used to predict machine failure
+
 # Files
 main jupyter notebook - courserwork.ipynb
-datasetused - data/ai4i2020.csv
+
+# data set
+data/ai4i2020.csv
+
+## Libraries Used
+The main Python libraries used in this project are:
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- scikit-learn
+
+# Machine Learning Pipeline
+The project follows these main stages
+
+
+1. **Data loading**  
+   The dataset was imported into Jupyter Notebook using pandas.
+
+2. **Data inspection and preprocessing**  
+   The dataset was checked using functions such as `head()`, `info()`, `shape`, `isnull().sum()`, and `describe()`.  
+   Unnecessary identifier columns were removed, and selected failure-related columns were dropped to avoid target leakage.  
+   The categorical `Type` column was encoded into numerical form.
+
+3. **Exploratory Data Analysis (EDA)**  
+   Exploratory analysis was carried out using plots and summary outputs to understand the class distribution and relationships between variables.
+
+4. **Model building**  
+   The dataset was split into training and testing sets.  
+   Two classification models were developed:
+   - Logistic Regression
+   - Random Forest Classifier
+
+5. **Model evaluation**  
+   The models were evaluated using:
+   - accuracy
+   - classification report
+   - confusion matrix
+
+   . **Model evaluation**  
+   The models were evaluated using:
+   - accuracy
+   - classification report
+   - confusion matrix
+
+6. **Model improvement**  
+   The Random Forest model was tuned by adjusting selected hyperparameters to test whether performance could be improved.
+
+## Results Summary
+The models were compared to identify which approach performed better for predicting machine failure. Random Forest achieved stronger performance than Logistic Regression and was selected for further tuning and final prediction.
+
+## Limitations
+Some limitations of this project include:
+- limited feature set from the dataset
+- only a small number of machine learning models were tested
+- tuning was basic rather than exhaustive
+- results are based on one dataset only
